@@ -1,4 +1,3 @@
-import { env } from "@/src/lib/env";
 import { prisma } from "@/src/lib/prisma";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import NextAuth, { AuthOptions } from "next-auth";
@@ -12,7 +11,7 @@ export const authOptions: AuthOptions = {
   },
   adapter: FixedPrismaAdapter,
   theme: {
-    logo: "/images/onlineclass.png",
+    logo: "/galsenext.png",
   },
   providers: [
     GoogleProvider({
@@ -28,6 +27,8 @@ export const authOptions: AuthOptions = {
           emailVerified: null,
           createdAt: new Date(),
           updatedAt: new Date(),
+          level: profile.level ? profile.level : "",
+          specialty: profile.specialty ? profile.specialty : "",
           isOnboarded: false,
         };
       },
@@ -47,6 +48,8 @@ export const authOptions: AuthOptions = {
       if (user) {
         token.id = user.id;
         token.role = user.role;
+        token.level = user.level;
+        token.specialty = user.specialty;
         token.isOnboarded = user.isOnboarded;
       }
 
