@@ -28,9 +28,6 @@ export const authOptions: AuthOptions = {
           emailVerified: null,
           createdAt: new Date(),
           updatedAt: new Date(),
-          level: profile.level ? profile.level : "",
-          specialty: profile.specialty ? profile.specialty : "",
-          xp: profile.xp ? profile.xp : 0,
           isOnboarded: false,
         };
       },
@@ -50,9 +47,6 @@ export const authOptions: AuthOptions = {
       if (user) {
         token.id = user.id;
         token.role = user.role;
-        token.level = user.level;
-        token.specialty = user.specialty;
-        token.xp = user.xp;
         token.isOnboarded = user.isOnboarded;
       }
 
