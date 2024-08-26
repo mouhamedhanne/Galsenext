@@ -66,5 +66,43 @@ model User {
   isOnboarded   Boolean         @default(false)
   accounts      Account[]
   sessions      Session[]
+
+  username  String?  @unique
+  bio       String?
+  link      String?
+  posts     Post[]
+  likes     Like[]
+  followers Follow[] @relation("follower")
+  followed  Follow[] @relation("followed")
+}
+
+model Post {
+  id        String   @id @default(cuid())
+  content   String
+  parentId  String?
+  userId    String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+  likes     Like[]
+  replies   Post[]   @relation("comments")
+  parent    Post?    @relation("comments", fields: [parentId], references: [id])
+}
+
+model Like {
+  id        String   @id @default(cuid())
+  userId    String
+  postId    String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+  post      Post     @relation(fields: [postId], references: [id])
+}
+
+model Follow {
+  id          String   @id @default(cuid())
+  followerId  String
+  followingId String
+  createdAt   DateTime @default(now())
+  follower    User     @relation("follower", fields: [followerId], references: [id])
+  followed    User     @relation("followed", fields: [followingId], references: [id])
 }
 
