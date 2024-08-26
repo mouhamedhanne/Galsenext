@@ -6,7 +6,7 @@ import { LoginButton } from "@/src/features/auth/LoginButton";
 
 export default function Header() {
   return (
-    <Container>
+    <Container isLandingPage>
       <header>
         <nav>
           <div className="flex justify-between items-center mt-4">
