@@ -29,6 +29,9 @@ export const authOptions: AuthOptions = {
           updatedAt: new Date(),
           level: profile.level ? profile.level : "",
           specialty: profile.specialty ? profile.specialty : "",
+          username: profile.username ? profile.username : "",
+          bio: profile.bio ? profile.bio : "",
+          link: profile.link ? profile.link : "",
           isOnboarded: false,
         };
       },

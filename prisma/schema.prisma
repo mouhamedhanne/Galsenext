@@ -67,7 +67,7 @@ model User {
   accounts      Account[]
   sessions      Session[]
 
-  username  String?  @unique
+  username  String?  
   bio       String?
   link      String?
   posts     Post[]
