@@ -10,14 +10,15 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Non autorisé" }, { status: 401 });
   }
 
-  const { level, specialty } = await request.json();
+  const {  username,
+    bio, } = await request.json();
 
   try {
     const updatedUser = await prisma.user.update({
       where: { id: session.user.id },
       data: {
-        level,
-        specialty,
+        username,
+        bio,
         isOnboarded: true,
       },
     });

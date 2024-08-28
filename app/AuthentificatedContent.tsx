@@ -9,8 +9,7 @@ const AuthenticatedContent: React.FC<AuthenticatedContentProps> = ({
 }: any) => {
   return (
     <Container>
-      <div>hello</div>
-      <p>{JSON.stringify(session, null, 2)}</p>
+      <div className="container">Hello world</div>
     </Container>
   );
 };

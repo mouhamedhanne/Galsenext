@@ -61,48 +61,23 @@ model User {
   createdAt     DateTime        @default(now())
   updatedAt     DateTime        @updatedAt
   role          String?
-  level         String?
-  specialty     String?
   isOnboarded   Boolean         @default(false)
   accounts      Account[]
   sessions      Session[]
-
   username  String?  
   bio       String?
   link      String?
-  posts     Post[]
-  likes     Like[]
-  followers Follow[] @relation("follower")
-  followed  Follow[] @relation("followed")
+  images        Image[]  @relation("UserImages")
 }
 
-model Post {
+model Image {
   id        String   @id @default(cuid())
-  content   String
-  parentId  String?
+  url       String   @unique
   userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade, name: "UserImages")
   createdAt DateTime @default(now())
-  user      User     @relation(fields: [userId], references: [id])
-  likes     Like[]
-  replies   Post[]   @relation("comments")
-  parent    Post?    @relation("comments", fields: [parentId], references: [id])
+  updatedAt DateTime @updatedAt
 }
 
-model Like {
-  id        String   @id @default(cuid())
-  userId    String
-  postId    String
-  createdAt DateTime @default(now())
-  user      User     @relation(fields: [userId], references: [id])
-  post      Post     @relation(fields: [postId], references: [id])
-}
 
-model Follow {
-  id          String   @id @default(cuid())
-  followerId  String
-  followingId String
-  createdAt   DateTime @default(now())
-  follower    User     @relation("follower", fields: [followerId], references: [id])
-  followed    User     @relation("followed", fields: [followingId], references: [id])
-}
 

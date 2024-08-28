@@ -110,11 +110,7 @@ const OnboardingStep: React.FC<OnboardingStepProps> = ({
 );
 
 interface OnboardingFormProps {
-  onComplete: (userData: {
-    establishment: string;
-    level: string;
-    specialty: string;
-  }) => Promise<void>;
+  onComplete: (userData: { username: string; bio: string }) => Promise<void>;
   stepNumber: number;
   totalSteps: number;
 }
@@ -124,26 +120,15 @@ const OnboardingForm: React.FC<OnboardingFormProps> = ({
   stepNumber,
   totalSteps,
 }) => {
-  const [establishment, setEstablishment] = useState("");
-  const [level, setLevel] = useState("");
-  const [specialty, setSpecialty] = useState("");
+  const [username, setUsername] = useState("");
+  const [bio, setBio] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-
-  const levels = ["CAP", "BEP", "BT", "BTS"];
-  const specialties = [
-    "Électricité",
-    "Mécanique auto",
-    "Soudure",
-    "Électromécanique",
-    "Électrotechnique",
-    "Mécanique générale",
-  ];
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     try {
-      await onComplete({ establishment, level, specialty });
+      await onComplete({ username, bio });
     } catch (error) {
       console.log(error);
     } finally {
@@ -174,32 +159,20 @@ const OnboardingForm: React.FC<OnboardingFormProps> = ({
             <div>
               <form
                 onSubmit={handleSubmit}
-                className="flex flex-col items-start"
+                className="flex flex-col items-start space-y-3"
               >
-                <Select onValueChange={setLevel} value={level}>
-                  <SelectTrigger className="w-full mb-4">
-                    <SelectValue placeholder="Sélectionnez un niveau" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {levels.map((l) => (
-                      <SelectItem key={l} value={l}>
-                        {l}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-                <Select onValueChange={setSpecialty} value={specialty}>
-                  <SelectTrigger className="w-full mb-4">
-                    <SelectValue placeholder="Sélectionnez une spécialité" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {specialties.map((s) => (
-                      <SelectItem key={s} value={s}>
-                        {s}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <Input
+                  placeholder="Username"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  required
+                />
+                <Input
+                  placeholder="Bio"
+                  value={bio}
+                  onChange={(e) => setBio(e.target.value)}
+                  required
+                />
                 <div className="flex justify-end w-full">
                   <Button type="submit" disabled={isLoading} className="">
                     {isLoading ? <Loader2 /> : "Terminer"}
@@ -228,7 +201,7 @@ export default function Onboarding() {
   const onboardingSteps: OnboardingStep[] = [
     {
       image: "/galsenext.png",
-      description: "Bienvenue sur notre plateforme d'apprentissage en ligne !",
+      description: "Bienvenue sur notre plateforme !",
     },
     {
       image: "/galsenext.png",
@@ -239,9 +212,8 @@ export default function Onboarding() {
 
   const totalSteps = onboardingSteps.length + 1;
   const handleComplete = async (userData: {
-    establishment: string;
-    level: string;
-    specialty: string;
+    username: string;
+    bio: string;
   }) => {
     setIsLoading(true);
     try {
