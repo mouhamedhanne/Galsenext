@@ -7,6 +7,12 @@ import { UserNav } from "@/src/features/auth/User";
 export const Header = async () => {
   const session = await getAuthSession();
 
+  const user = session?.user;
+
+  if (!user) {
+    throw new Error("No session found");
+  }
+
   return (
     <header className="border-b border-b-accent fixed top-0 bg-background w-full">
       <div className="container flex items-center py-2 max-w-lg m-auto gap-1">
@@ -18,7 +24,7 @@ export const Header = async () => {
           className="mr-auto"
         />
         <ThemeToggle />
-        {session?.user ? <UserNav /> : null}
+        {session?.user ? <UserNav user={user} /> : null}
       </div>
     </header>
   );
