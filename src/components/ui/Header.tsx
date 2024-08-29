@@ -3,6 +3,7 @@ import GalsenextLogo from "@/public/galsenext.svg";
 import { ThemeToggle } from "../ThemeToggle";
 import { getAuthSession } from "@/src/lib/auth";
 import { UserNav } from "@/src/features/auth/User";
+import { LocaleSelect } from "@/app/[locale]/LocaleSelect";
 
 export const Header = async () => {
   const session = await getAuthSession();
@@ -25,6 +26,7 @@ export const Header = async () => {
         />
         <ThemeToggle />
         {session?.user ? <UserNav user={user} /> : null}
+        <LocaleSelect />
       </div>
     </header>
   );

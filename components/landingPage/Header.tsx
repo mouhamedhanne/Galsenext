@@ -3,6 +3,7 @@ import { Logo } from "@/components/elements/Logo";
 import Link from "next/link";
 import { ThemeToggle } from "@/src/components/ThemeToggle";
 import { LoginButton } from "@/src/features/auth/LoginButton";
+import { LocaleSelect } from "@/app/[locale]/LocaleSelect";
 
 export default function Header() {
   return (
@@ -31,6 +32,7 @@ export default function Header() {
             </div>
             <div className="flex items-center space-x-5">
               <LoginButton />
+              <LocaleSelect />
               <div>
                 <ThemeToggle />
               </div>
