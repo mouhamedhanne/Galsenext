@@ -2,7 +2,7 @@ import Image from "next/image";
 import GalsenextLogo from "@/public/galsenext.svg";
 import { ThemeToggle } from "../ThemeToggle";
 import { getAuthSession } from "@/src/lib/auth";
-import { User } from "@/src/features/auth/User";
+import { UserNav } from "@/src/features/auth/User";
 
 export const Header = async () => {
   const session = await getAuthSession();
@@ -17,8 +17,8 @@ export const Header = async () => {
           height="60"
           className="mr-auto"
         />
-        {session?.user ? <User /> : null}
         <ThemeToggle />
+        {session?.user ? <UserNav /> : null}
       </div>
     </header>
   );
