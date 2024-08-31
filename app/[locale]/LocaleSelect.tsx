@@ -32,16 +32,14 @@ export const LocaleSelect = () => {
   return (
     <Button
       variant="ghost"
-      size="icon"
       onClick={handleSwitch}
       title={`Switch to ${locale === "en" ? "Français" : "English"}`}
-      className="w-6 h-6 p-0"
+      className="relative h-8 w-8 rounded-full"
     >
-      <Avatar>
+      <Avatar className="h-8 w-8">
         <AvatarImage
           src={languageOptions[locale].flagUrl}
           alt={languageOptions[locale].label}
-          //className="w-6 h-6"
         />
         <AvatarFallback className="text-xs">
           {locale.toUpperCase()}
