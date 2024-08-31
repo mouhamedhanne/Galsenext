@@ -35,7 +35,7 @@ export const LocaleSelect = () => {
       size="icon"
       onClick={handleSwitch}
       title={`Switch to ${locale === "en" ? "Français" : "English"}`}
-      className="w-8 h-8 p-0"
+      className="w-6 h-6 p-0"
     >
       <Avatar>
         <AvatarImage
