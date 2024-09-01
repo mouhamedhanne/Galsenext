@@ -1,33 +1,9 @@
 {
   "name": "galsenext",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Un starter kit pour Next.js avec NextAuth, Neon et Prisma",
-  "main": "index.js",
-  "bin": {
-    "create-galsenext-app": "./bin/create-galsenext-app.js"
-  },
   "private": false,
-  "files": [
-    "app/",
-    "bin/",
-    "components/",
-    "hooks/",
-    "lib/",
-    "locales/",
-    "pages/",
-    "prisma/",
-    "public/",
-    "src/",
-    ".env.exemple",
-    "components.jsom",
-    "middleware",
-    "next.config.js",
-    "README.md",
-    "tailwind.config.ts",
-    "tsconfig.json"
-  ],
   "scripts": {
-    "create": "node ./bin/create-galsenext-app.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
