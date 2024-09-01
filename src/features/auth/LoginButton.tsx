@@ -13,7 +13,7 @@ export const LoginButton = () => {
 
   return (
     <Button
-      className="gap-2 bg-home_secondary hover:bg-home_secondary/90"
+      className="gap-2 bg-home_secondary hover:bg-home_secondary/90 text-white border-[home_secondary]"
       variant="outline"
       size="sm"
       disabled={mutation.isPending}
@@ -21,7 +21,11 @@ export const LoginButton = () => {
         mutation.mutate();
       }}
     >
-      {mutation.isPending ? <Loader size={12} /> : <LogIn size={12} />}
+      {mutation.isPending ? (
+        <Loader size={12} className="text-white" />
+      ) : (
+        <LogIn size={12} className="text-white" />
+      )}
       Demo
     </Button>
   );

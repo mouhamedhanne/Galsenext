@@ -39,7 +39,8 @@ export function SpotlightPreview() {
           <div className="flex pt-10 justify-center items-center space-x-4">
             <div>
               <Link
-                href=""
+                href="https://galsenext-docs.vercel.app/docs"
+                target="_blank"
                 className="inline-flex items-center text-white justify-center whitespace-nowrap
               rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none
               focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none
