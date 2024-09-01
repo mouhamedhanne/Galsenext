@@ -55,12 +55,14 @@ export default function Header() {
             </button>
           </div>
 
-          <div className="flex items-center justify-center space-x-3 md:block hidden">
-            <div>
-              <LocaleSelect />
-            </div>
-            <div>
-              <LoginButton />
+          <div className="md:block hidden">
+            <div className="flex items-center justify-center space-x-3 ">
+              <div>
+                <LocaleSelect />
+              </div>
+              <div>
+                <LoginButton />
+              </div>
             </div>
           </div>
         </div>
