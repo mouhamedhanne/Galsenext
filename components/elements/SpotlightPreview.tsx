@@ -43,11 +43,11 @@ export function SpotlightPreview() {
           </h1>
           <p className="mt-6 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
             Accelerate your app development with{" "}
-            <span className="font-extrabold">Galsenext</span>, lthe Next.js
-            starter kit integrated with{" "}
-            <span className="font-extrabold">Neon</span> 🚀 the serverless
-            PostgreSQL database. Enjoy a ready-to-use setup to create modern,
-            scalable, and high-performance applications.
+            <span className="font-extrabold">Galsenext</span>, the Next.js
+            starter kit with <span className="font-extrabold">Neon</span>{" "}
+            🚀integrated, the serverless PostgreSQL database. Enjoy a
+            ready-to-use setup to create modern, scalable, and high-performance
+            applications.
           </p>
           <div className="flex pt-10 justify-center items-center space-x-4">
             <div>
