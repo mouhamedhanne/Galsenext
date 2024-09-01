@@ -9,18 +9,18 @@ export function CardHoverEffect() {
 }
 export const projects = [
   {
-    title: "Génération Automatique de Contenu",
+    title: "Optimisé pour Next.js",
     description:
-      "AiStream utilise des algorithmes d'intelligence artificielle avancés pour générer automatiquement du contenu personnalisé et captivant pour vos réseaux sociaux, vous permettant d'économiser du temps et d'obtenir des résultats de qualité supérieure.",
+      "Profitez de la puissance et de la flexibilité de Next.js pour développer votre application avec un rendu côté serveur performant et une navigation fluide. Concentrez-vous sur vos fonctionnalités, Galsenext prend en charge la configuration initiale pour vous faire gagner un temps précieux.",
   },
   {
-    title: "Planification Intelligente des Publications",
+    title: "Authentification Prête à l'Emploi avec NextAuth et Prisma",
     description:
-      "Planifiez vos publications à l'avance avec AiStream, en tenant compte des moments les plus propices pour maximiser votre visibilité et votre engagement, tout en automatisant entièrement votre calendrier éditorial pour une diffusion au bon moment, à chaque fois.",
+      "Gérez vos utilisateurs avec un système complet et flexible, prêt à l'emploi, qui vous permet de vous concentrer sur l'essentiel : le développement de vos fonctionnalités, tout en garantissant la sécurité de votre application.",
   },
   {
-    title: "Personnalisation Avancée",
+    title: "Déploiement Instantané avec Neon",
     description:
-      "Avec AiStream, personnalisez votre contenu pour chaque groupe cible en segmentant votre audience et en adaptant votre message à leurs préférences et comportements, renforçant ainsi votre relation client avec une expérience personnalisée et pertinente.",
+      "Démarrez rapidement avec une intégration transparente de Neon, la base de données PostgreSQL serverless. Bénéficiez d'une scalabilité automatique et de performances optimisées dès la mise en production.",
   },
 ];
