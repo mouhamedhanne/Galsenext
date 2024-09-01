@@ -7,13 +7,6 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { CheckCircle, Circle, Loader2, XCircle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Button } from "../ui/button";
 
 interface ProgressBarProps {
@@ -98,7 +91,7 @@ const OnboardingStep: React.FC<OnboardingStepProps> = ({
           <div>
             <p className="text-center mt-4 mb-8">{description}</p>
             <div className="flex justify-end">
-              <Button onClick={onNext} className="">
+              <Button onClick={onNext} className="bg-home_secondary text-white">
                 Next
               </Button>
             </div>
@@ -174,7 +167,11 @@ const OnboardingForm: React.FC<OnboardingFormProps> = ({
                   required
                 />
                 <div className="flex justify-end w-full">
-                  <Button type="submit" disabled={isLoading} className="">
+                  <Button
+                    type="submit"
+                    disabled={isLoading}
+                    className="bg-home_secondary text-white"
+                  >
                     {isLoading ? <Loader2 /> : "Terminer"}
                   </Button>
                 </div>

@@ -13,7 +13,7 @@ export const LoginButton = () => {
 
   return (
     <Button
-      className="gap-2 bg-home_secondary hover:bg-home_secondary/90 text-white border-[home_secondary]"
+      className="gap-2 bg-home_secondary hover:bg-home_secondary/90 text-white hover:text-white"
       variant="outline"
       size="sm"
       disabled={mutation.isPending}

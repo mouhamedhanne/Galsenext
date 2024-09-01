@@ -21,20 +21,22 @@ export function SpotlightPreview() {
           >
             <div className="pb-6">
               {" "}
-              AiStream <u className="text-home_secondary">Révolutionne</u>
+              Lancez <u className="text-home_secondary">Rapidement</u>
             </div>
             Votre{" "}
             <span className="uppercase bg-home_secondary text-white px-1 py-2">
               {" "}
-              Présence
+              App
             </span>{" "}
-            en Ligne avec l' IA
+            avec Galsenext"
           </h1>
           <p className="mt-6 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-            Grâce à notre puissante combinaison de technologie d'intelligence
-            artificielle et d'automatisation, nous offrons des solutions
-            innovantes pour générer du contenu de qualité, fidéliser votre
-            audience et développer votre présence sur les réseaux sociaux 🚀.
+            Accélérez le développement de vos applications avec{" "}
+            <span className="font-extrabold">Galsenext</span> , le kit starter
+            Next.js intégré à <span className="font-extrabold">Neon</span> 🚀,
+            la base de données PostgreSQL serverless. Profitez d'une
+            configuration prête à l'emploi pour créer des applications modernes,
+            évolutives, et performantes.
           </p>
           <div className="flex pt-10 justify-center items-center space-x-4">
             <div>

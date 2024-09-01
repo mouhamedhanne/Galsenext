@@ -56,7 +56,7 @@ export default function Header() {
           </div>
 
           <div className="md:block hidden">
-            <div className="flex items-center justify-center space-x-3 ">
+            <div className="flex items-center justify-center space-x-4 ">
               <div>
                 <LocaleSelect />
               </div>
