@@ -1,5 +1,5 @@
 {
-  "name": "create-galsenext-app",
+  "name": "galsenext",
   "version": "1.0.0",
   "description": "Un starter kit pour Next.js avec NextAuth, Neon et Prisma",
   "main": "index.js",
