@@ -1,6 +1,6 @@
 import { SpotlightPreview } from "../elements/SpotlightPreview";
 
-export default function page() {
+export default function Herotop() {
   return (
     <div className="">
       <SpotlightPreview />
