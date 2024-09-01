@@ -32,9 +32,4 @@ export const Providers = (props: PropsWithChildren<{ locale: string }>) => {
       </ThemeProvider>
     </>
   );
-
-{
-  /**
-  
-}; */
-}
+};

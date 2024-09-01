@@ -2,6 +2,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export function SpotlightPreview() {
   return (
@@ -37,18 +38,26 @@ export function SpotlightPreview() {
             audience et développer votre présence sur les réseaux sociaux 🚀.
           </p>
           <div className="flex pt-10 justify-center items-center space-x-4">
-            <button
-              className="inline-flex items-center text-white justify-center whitespace-nowrap
+            <div>
+              <Link
+                href=""
+                className="inline-flex items-center text-white justify-center whitespace-nowrap
               rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none
               focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none
               disabled:opacity-50 border border-input border-home_secondary bg-home_page
             hover:bg-home_secondary hover:text-white h-11 rounded-md px-8"
-            >
-              Demander un devis
-            </button>{" "}
-            <Button className="bg-home_secondary hover:bg-home_secondary/90 h-11">
-              contact
-            </Button>
+              >
+                Demander un devis
+              </Link>
+            </div>
+            <div>
+              <Link
+                href=""
+                className="bg-home_secondary hover:bg-home_secondary/90 h-11"
+              >
+                contact
+              </Link>
+            </div>
           </div>
         </div>
       </div>
