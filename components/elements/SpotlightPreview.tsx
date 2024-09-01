@@ -1,7 +1,5 @@
 import React from "react";
-import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/Spotlight";
-import { Button } from "../ui/button";
 import Link from "next/link";
 
 export function SpotlightPreview() {
