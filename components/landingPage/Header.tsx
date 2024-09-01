@@ -10,6 +10,7 @@ import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/src/components/ThemeToggle";
 import { LoginButton } from "@/src/features/auth/LoginButton";
 import { LocaleSelect } from "@/app/[locale]/LocaleSelect";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,9 +38,9 @@ export default function Header() {
                 <Link
                   href="https://galsenext-docs.vercel.app/docs"
                   target="_blank"
-                  className={`text-white hover:text-home_secondary `}
+                  className={`flex items-center space-x-2 text-white hover:text-home_secondary `}
                 >
-                  Tarifs
+                  Documentation <ArrowUpRight size="16" />
                 </Link>
               </div>
               {/* Menu for mobile screens */}
@@ -59,11 +60,11 @@ export default function Header() {
             </div>
 
             <div className="flex items-center justify-center space-x-3 md:block hidden">
-              <Link href="/">
-                <Button className="bg-home_secondary hover:bg-home_secondary/90 h-11">
-                  Demo
-                </Button>
-              </Link>
+              <LoginButton />
+              <LocaleSelect />
+              <div>
+                <ThemeToggle />
+              </div>
             </div>
           </div>
         </nav>
@@ -87,15 +88,19 @@ export default function Header() {
                 href="https://galsenext-docs.vercel.app/docs"
                 target="_blank"
                 onClick={() => setMenuOpen(false)}
-                className={`text-white hover:text-home_secondary `}
+                className={`flex items-center space-x-2 text-white hover:text-home_secondary `}
               >
-                Contact
+                Documentatation <ArrowUpRight size="16" />
               </Link>
             </div>
             <div>
-              <Button className="bg-home_secondary hover:bg-home_secondary/90 h-11">
-                Demo
-              </Button>
+              <LoginButton />
+            </div>
+            <div>
+              <LocaleSelect />
+            </div>
+            <div>
+              <ThemeToggle />
             </div>
           </div>
         )}

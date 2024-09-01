@@ -22,7 +22,7 @@ export const LoginButton = () => {
       }}
     >
       {mutation.isPending ? <Loader size={12} /> : <LogIn size={12} />}
-      Login
+      Demo
     </Button>
   );
 };
