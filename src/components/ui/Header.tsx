@@ -24,7 +24,7 @@ export const Header = async () => {
           height="60"
           className="mr-auto"
         />
-        <div className="space-x-2">
+        <div className="flex items-center space-x-2">
           {session?.user ? <UserNav user={user} /> : null}
           <ThemeToggle />
 
