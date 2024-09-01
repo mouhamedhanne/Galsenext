@@ -3,7 +3,7 @@ import { CardHoverEffect } from "../elements/CardHoverEffect";
 export default function Feature() {
   return (
     <div className=" bg-home_page">
-      <div className="max-w-5xl mx-auto pb-10 -mt-12">
+      <div className="max-w-5xl mx-auto pb-10 -mt-[20rem]">
         <div
           className="text-4xl pb-5 md:text-6xl text-center
          bg-clip-text text-transparent bg-gradient-to-b
