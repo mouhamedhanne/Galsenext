@@ -16,8 +16,7 @@ export const Header = async () => {
 
   return (
     <header className="border-b border-b-accent fixed top-0 bg-background w-full">
-      <div className="container flex items-center py-2 max-w-lg m-auto gap-1 space-x-2">
-        {session?.user ? <UserNav user={user} /> : null}
+      <div className="container flex items-center py-2 max-w-lg m-auto gap-1 ">
         <Image
           src={GalsenextLogo}
           alt="Galsenext Logo"
@@ -25,9 +24,12 @@ export const Header = async () => {
           height="60"
           className="mr-auto"
         />
-        <ThemeToggle />
+        <div className="space-x-2">
+          {session?.user ? <UserNav user={user} /> : null}
+          <ThemeToggle />
 
-        <LocaleSelect />
+          <LocaleSelect />
+        </div>
       </div>
     </header>
   );
