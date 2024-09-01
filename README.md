@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://galsenext.vercel.app/_next/static/media/galsenext.e19bf31a.svg" alt="Logo galsenext" width="50">
+  <img src="https://galsenext.vercel.app/_next/static/media/galsenext.e19bf31a.svg" alt="Logo galsenext" width="200">
 </p>
 
 # Galsenext
