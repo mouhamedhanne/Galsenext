@@ -1,6 +1,7 @@
 import React from "react";
 import { Spotlight } from "@/components/ui/Spotlight";
 import Link from "next/link";
+import { LoginButton } from "@/src/features/auth/LoginButton";
 
 export function SpotlightPreview() {
   return (
@@ -49,12 +50,7 @@ export function SpotlightPreview() {
               </Link>
             </div>
             <div>
-              <Link
-                href=""
-                className="bg-home_secondary hover:bg-home_secondary/90 h-11"
-              >
-                contact
-              </Link>
+              <LoginButton />
             </div>
           </div>
         </div>
