@@ -15,81 +15,51 @@ export default function Faq() {
             className="scroll-m-20 font-caption font-semibold tracking-tight 
             transition-colors first:mt-0 text-5xl "
           >
-            Questions fréquentes
+            Frequently Asked Questions
           </h3>
         </div>
         <div className="flex-1">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>
-                Qu'est-ce qui différencie AiStream des autres agences de
-                marketing sur les réseaux sociaux ?
-              </AccordionTrigger>
+              <AccordionTrigger>What is Galsenext ?</AccordionTrigger>
               <AccordionContent>
-                AiStream se démarque par son utilisation innovante de
-                l'intelligence artificielle pour automatiser et optimiser de
-                nombreuses tâches liées aux réseaux sociaux. Notre combinaison
-                unique d'expertise humaine et de puissance technologique IA nous
-                permet d'offrir des solutions sur-mesure, performantes et
-                évolutives à nos clients.
+                Galsenext is a Next.js starter kit that integrates NextAuth,
+                Prisma, and Neon to simplify the development of modern web
+                applications.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger>
-                Quels types de services AiStream propose-t-il ?
+                How does Galsenext handle the database ?
               </AccordionTrigger>
               <AccordionContent>
-                Nous proposons une gamme complète de services alimentés par l'IA
-                comme la planification et publication automatisée de contenus,
-                nos solutions couvrent les principales plateformes telles que
-                Facebook, Twitter, LinkedIn et bientôt Instagram.
+                Galsenext uses Neon, a serverless PostgreSQL database, for
+                simple and scalable data management.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger>
-                Comment AiStream garantit-il la qualité et la pertinence du
-                contenu généré par l'IA ?
+                How is NextAuth and Prisma configured ?
               </AccordionTrigger>
               <AccordionContent>
-                Nos modèles d'IA sont entraînés par notre équipe d'experts avec
-                des données de qualité. De plus, chaque contenu généré est
-                supervisé et affiné par nos spécialistes marketing avant
-                publication pour assurer sa cohérence avec la voix de la marque
-                et les objectifs visés.
+                Configuration is ready-to-use with NextAuth for authentication
+                and Prisma for database management.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger>Can I customize the themes ?</AccordionTrigger>
+              <AccordionContent>
+                Yes, Galsenext allows easy customization of themes and landing
+                pages.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger>
-                Quels types de clients AiStream accompagne-t-il ?
+                What are the prerequisites for using Galsenext ?
               </AccordionTrigger>
               <AccordionContent>
-                Nous travaillons avec des entreprises de toutes tailles, des
-                start-ups aux grandes entreprises, opérant dans divers secteurs
-                d'activité. Nos solutions d'automatisation IA pour les réseaux
-                sociaux s'adaptent aux besoins spécifiques de chaque client.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-5">
-              <AccordionTrigger>
-                Les services d'AiStream sont-ils évolutifs et personnalisables ?
-              </AccordionTrigger>
-              <AccordionContent>
-                Oui, l'un des principaux avantages d'AiStream est la flexibilité
-                et l'évolutivité de nos offres. Nous créons des solutions
-                sur-mesure, extensibles, qui s'ajusteront aux changements de
-                stratégie et aux objectifs futurs de votre entreprise.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-6">
-              <AccordionTrigger>
-                AiStream respecte-t-il la vie privée et la réglementation sur
-                les données ?
-              </AccordionTrigger>
-              <AccordionContent>
-                Absolument, la confidentialité des données est notre priorité.
-                Nous nous conformons strictement aux réglementations en vigueur
-                comme le RGPD. Aucune donnée client n'est partagée ou utilisée
-                sans autorisation préalable.
+                You need Node.js and a Neon account. Clone the repository,
+                install dependencies, configure .env, and run the application.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

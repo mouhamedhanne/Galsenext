@@ -20,11 +20,11 @@ export function SpotlightPreview() {
             className="text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent
             bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50"
           >
-            <div className="pb-6">
+            <div className="pb-0 sm:pb-6">
               {" "}
-              Lancez <u className="text-home_secondary">Rapidement</u>
+              Quickly <u className="text-home_secondary">Launch</u>
             </div>
-            Votre{" "}
+            Your{" "}
             <b className="relative inline-block">
               <svg
                 className="absolute z-0 h-[100%] w-[calc(100%+1rem)] fill-home_secondary"
@@ -39,15 +39,15 @@ export function SpotlightPreview() {
               </svg>
               <span className="relative z-20 text-white">App</span>{" "}
             </b>{" "}
-            avec Galsenext
+            with Galsenext
           </h1>
           <p className="mt-6 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-            Accélérez le développement de vos applications avec{" "}
-            <span className="font-extrabold">Galsenext</span> , le kit starter
-            Next.js avec <span className="font-extrabold">Neon</span> 🚀
-            intégré, la base de données PostgreSQL serverless. Profitez d'une
-            configuration prête à l'emploi pour créer des applications modernes,
-            évolutives, et performantes.
+            Accelerate your app development with{" "}
+            <span className="font-extrabold">Galsenext</span>, lthe Next.js
+            starter kit integrated with{" "}
+            <span className="font-extrabold">Neon</span> 🚀 the serverless
+            PostgreSQL database. Enjoy a ready-to-use setup to create modern,
+            scalable, and high-performance applications.
           </p>
           <div className="flex pt-10 justify-center items-center space-x-4">
             <div>

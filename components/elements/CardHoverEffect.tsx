@@ -9,18 +9,18 @@ export function CardHoverEffect() {
 }
 export const projects = [
   {
-    title: "Optimisé pour Next.js",
+    title: "Optimized for Next.js",
     description:
-      "Profitez de la puissance et de la flexibilité de Next.js pour développer votre application avec un rendu côté serveur performant et une navigation fluide. Concentrez-vous sur vos fonctionnalités, Galsenext prend en charge la configuration initiale pour vous faire gagner un temps précieux.",
+      "Leverage the power and flexibility of Next.js to build your application with efficient server-side rendering and smooth navigation. Focus on your features while Galsenext handles the initial setup to save you valuable time.",
   },
   {
-    title: "Authentification Prête à l'Emploi avec NextAuth et Prisma",
+    title: "Ready-to-Use Authentication with NextAuth and Prisma",
     description:
-      "Gérez vos utilisateurs avec un système complet et flexible, prêt à l'emploi, qui vous permet de vous concentrer sur l'essentiel : le développement de vos fonctionnalités, tout en garantissant la sécurité de votre application.",
+      "Manage your users with a complete and flexible system that's ready to use, allowing you to focus on core features while ensuring your application's security.",
   },
   {
-    title: "Déploiement Instantané avec Neon",
+    title: "Instant Deployment with Neon",
     description:
-      "Démarrez rapidement avec une intégration transparente de Neon, la base de données PostgreSQL serverless. Bénéficiez d'une scalabilité automatique et de performances optimisées dès la mise en production.",
+      "Start fast with Neon, the serverless PostgreSQL database. Benefit from automatic scalability and optimized performance from the moment you go live.",
   },
 ];

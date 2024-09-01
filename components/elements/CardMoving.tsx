@@ -18,31 +18,26 @@ export function CardMoving() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "Galsenext made setting up my Next.js app a breeze. The integration with Neon is seamless, and the Prisma authentication is top-notch. Highly recommend!",
+    name: "Alex Johnson",
+    title: "Web Developer",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "Incredible starter kit! The combination of Next.js and Neon really speeds up development. Plus, the pre-configured auth with NextAuth and Prisma is a lifesaver.",
+    name: "Emily Davis",
+    title: "Web Developer",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "Fantastic tool for rapid app development. Galsenext's integration with Neon and its NextAuth/Prisma setup saved me hours of setup time.",
+    name: "Jessica Brown",
+    title: "Web Developer",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "Galsenext simplified my workflow with its Next.js setup and Neon integration. The ready-to-use authentication system is robust and easy to implement.",
+    name: "Michael Lee",
+    title: "Web Developer",
   },
 ];

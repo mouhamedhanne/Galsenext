@@ -9,12 +9,9 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <div className="space-y-1">
               <Logo width="60" />
-              <h3 className="scroll-m-20 text-xl text-white font-semibold tracking-tight">
-                AiStream
-              </h3>
             </div>
             <p className="text-sm text-muted-foreground italic">
-              © 2024 AiStream - All rights reserved.
+              © 2024 Galsenext
             </p>
           </div>
           <div className="flex flex-col items-start mt-4 lg:mt-0 lg:items-end gap-4">
@@ -42,13 +39,14 @@ export default function Footer() {
               LinkedIn
             </Link>
             <Link
-              href="/"
+              href="https://www.linkedin.com/in/mouhamed-el-malick-hanne-99199a2a6/"
+              target="_blank"
               className="text-sm text-muted-foreground hover:underline"
             >
               Twitter
             </Link>
             <Link
-              href="/"
+              href=""
               className="text-sm text-muted-foreground hover:underline"
             >
               Instagram
