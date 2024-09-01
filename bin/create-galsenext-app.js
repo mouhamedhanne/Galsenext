@@ -8,7 +8,7 @@ const projectName = process.argv[2];
 if (!projectName) {
   console.log("Veuillez spécifier un nom pour le projet");
   console.log("Par exemple :");
-  console.log("  npx create-galsenext-app mon-projet");
+  console.log("  npx galsenext mon-projet");
   process.exit(1);
 }
 
