@@ -14,7 +14,7 @@ const AuthenticatedContent: React.FC<AuthenticatedContentProps> = async ({
     <Container>
       <div className="container">
         <LayoutHeader>
-          <LayoutTitle>Home page</LayoutTitle>
+          <LayoutTitle>{t("HomePage")}</LayoutTitle>
           <h2>{t("new")}</h2>
         </LayoutHeader>
       </div>

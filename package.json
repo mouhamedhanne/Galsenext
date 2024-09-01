@@ -1,14 +1,34 @@
 {
-  "name": "neon-starter-kit",
-  "version": "0.1.0",
-  "private": true,
+  "name": "create-galsenext-app",
+  "version": "1.0.0",
+  "description": "Un starter kit pour Next.js avec NextAuth, Neon et Prisma",
+  "main": "index.js",
+  "bin": {
+    "create-galsenext-app": "./bin/create-galsenext-app.js"
+  },
+  "private": false,
   "scripts": {
+    "create": "node ./bin/create-galsenext-app.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prisma:seed": "prisma db seed",
     "vercel-build": "prisma generate && prisma migrate deploy && next build"
+  },
+  "keywords": [
+    "nextjs",
+    "starter",
+    "nextauth",
+    "prisma",
+    "neon",
+    "tailwindcss"
+  ],
+  "author": "Mouhamed El Malick HANNE",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mouhamedhanne/Galsenext"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.4.2",
