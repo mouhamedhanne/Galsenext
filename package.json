@@ -1,6 +1,6 @@
 {
   "name": "galsenext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Un starter kit pour Next.js avec NextAuth, Neon et Prisma",
   "main": "index.js",
   "bin": {
