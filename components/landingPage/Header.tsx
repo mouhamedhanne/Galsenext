@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { ThemeToggle } from "@/src/components/ThemeToggle";
 import { LoginButton } from "@/src/features/auth/LoginButton";
 import { LocaleSelect } from "@/app/[locale]/LocaleSelect";
 import { ArrowUpRight } from "lucide-react";

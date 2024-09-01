@@ -8,7 +8,7 @@ import Testimonial from "@/components/landingPage/Testimonial";
 
 export default function PublicContent() {
   return (
-    <main>
+    <main className="bg-home_page ">
       <Header />
       <Herotop />
       <Feature />
