@@ -9,7 +9,9 @@ export default function CallToAction() {
             Ready to Boost your productivity ?
           </span>
           <br />
-          <span className="text-gray-400 ">C'est le moment de rejoindre !</span>
+          <span className="text-gray-400 ">
+            Kickstart your project with Galsenext today !
+          </span>
         </h3>
         <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
           <button
@@ -19,7 +21,7 @@ export default function CallToAction() {
           bg-home_secondary text-white hover:bg-home_secondary/90 h-11 rounded-md px-8"
           >
             <Link href="https://galsenext-docs.vercel.app/docs" target="_blank">
-              Get started now!
+              Get started now !
             </Link>
           </button>
         </div>
