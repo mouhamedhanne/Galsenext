@@ -2,6 +2,7 @@ import React from "react";
 import { Spotlight } from "@/components/ui/Spotlight";
 import Link from "next/link";
 import { LoginButton } from "@/src/features/auth/LoginButton";
+import { ArrowUpRight } from "lucide-react";
 
 export function SpotlightPreview() {
   return (
@@ -24,11 +25,26 @@ export function SpotlightPreview() {
               Lancez <u className="text-home_secondary">Rapidement</u>
             </div>
             Votre{" "}
-            <span className="uppercase bg-home_secondary text-white px-1 py-2">
-              {" "}
-              App
-            </span>{" "}
-            avec Galsenext"
+            <b className="relative inline-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="255"
+                height="36"
+                viewBox="0 0 255 36"
+                fill="none"
+                className="absolute -bottom-2 left-[-50%] top-5 z-0  inline-block w-[150%] 
+            text-home_secondary"
+              >
+                <path
+                  d="M2.99975 17.6351C116.771 12.3405 178.178 12.7036 252 18.0966"
+                  stroke="currentColor"
+                  stroke-width="5.75696"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+              <span className="uppercase relative z-10">App</span>{" "}
+            </b>
+            avec Galsenext
           </h1>
           <p className="mt-6 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
             Accélérez le développement de vos applications avec{" "}
@@ -43,13 +59,13 @@ export function SpotlightPreview() {
               <Link
                 href="https://galsenext-docs.vercel.app/docs"
                 target="_blank"
-                className="inline-flex items-center text-white justify-center whitespace-nowrap
+                className="inline-flex items-center text-white justify-center space-x-2 whitespace-nowrap
               rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none
               focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none
               disabled:opacity-50 border border-input border-home_secondary bg-home_page
             hover:bg-home_secondary hover:text-white h-11 rounded-md px-8"
               >
-                Demander un devis
+                Documentation <ArrowUpRight size="16" />
               </Link>
             </div>
             <div>
