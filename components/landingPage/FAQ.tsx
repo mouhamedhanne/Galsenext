@@ -53,7 +53,7 @@ export default function Faq() {
                 pages.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-4">
+            <AccordionItem value="item-5">
               <AccordionTrigger>
                 What are the prerequisites for using Galsenext ?
               </AccordionTrigger>
